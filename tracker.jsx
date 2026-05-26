@@ -465,7 +465,7 @@ function DetailPanel({ c, onClose, onToast }) {
             <span className="detail-news-c">búsquedas en medios</span>
           </div>
           <div className="news-sources">
-            {MEDIA_SOURCES.map(s => {
+            {MEDIA_SOURCES.filter(s => (c.noticias || []).some(n => n.fuente === s.name)).map(s => {
               const href = s.url(c.name);
               return (
                 <a key={s.name} href={href} target="_blank" rel="noopener noreferrer" onClick={e => handleNewsClick(e, href)} className="news-source">
