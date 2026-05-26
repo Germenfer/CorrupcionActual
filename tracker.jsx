@@ -1,16 +1,6 @@
 // Main Tracker App
 const { useState, useMemo, useEffect, useRef } = React;
 
-// Medios para los enlaces de hemeroteca — búsquedas reales por nombre de caso.
-const MEDIA_SOURCES = [
-  { name: 'El País',        url: q => `https://elpais.com/buscador/?qt=${encodeURIComponent(q)}` },
-  { name: 'elDiario.es',     url: q => `https://www.eldiario.es/?s=${encodeURIComponent(q)}` },
-  { name: 'El Mundo',        url: q => `https://www.elmundo.es/buscador.html?q=${encodeURIComponent(q)}` },
-  { name: 'El Confidencial', url: q => `https://www.elconfidencial.com/buscador/?searchwords=${encodeURIComponent(q)}` },
-  { name: 'ABC',             url: q => `https://www.abc.es/buscador.html?query=${encodeURIComponent(q)}` },
-  { name: 'La Vanguardia',   url: q => `https://www.lavanguardia.com/hemeroteca?searchTerm=${encodeURIComponent(q)}` },
-  { name: 'Google News',     url: q => `https://news.google.com/search?q=${encodeURIComponent(q)}&hl=es` },
-];
 
 // Parsea el campo `importe` ("€10–53 M", "€475 M", "€22.400 M", "€20,6 M", etc.)
 // y devuelve euros como número, usando el extremo superior si es rango.
@@ -441,6 +431,11 @@ function DetailPanel({ c, onClose, onToast }) {
             <ul className="news-list">
               {c.noticias.map((n, i) => (
                 <li key={i} className="news-item">
+                  <div className="news-item-meta">
+                    <span className="news-item-fuente">{n.fuente}</span>
+                    <span className="news-item-sep">·</span>
+                    <span className="news-item-fecha">{n.fecha}</span>
+                  </div>
                   {n.url ? (
                     <a href={n.url} target="_blank" rel="noopener noreferrer" onClick={e => handleNewsClick(e, n.url)} className="news-item-link">
                       <span className="news-item-titulo">{n.titulo}</span>
@@ -449,33 +444,12 @@ function DetailPanel({ c, onClose, onToast }) {
                   ) : (
                     <span className="news-item-titulo news-item-nolink">{n.titulo}</span>
                   )}
-                  <div className="news-item-meta">
-                    <span className="news-item-fuente">{n.fuente}</span>
-                    <span className="news-item-fecha">{n.fecha}</span>
-                  </div>
                 </li>
               ))}
             </ul>
           </div>
         )}
 
-        <div className="detail-news">
-          <div className="detail-news-h">
-            <h3>Hemeroteca</h3>
-            <span className="detail-news-c">búsquedas en medios</span>
-          </div>
-          <div className="news-sources">
-            {MEDIA_SOURCES.filter(s => (c.noticias || []).some(n => n.fuente === s.name)).map(s => {
-              const href = s.url(c.name);
-              return (
-                <a key={s.name} href={href} target="_blank" rel="noopener noreferrer" onClick={e => handleNewsClick(e, href)} className="news-source">
-                  <span className="news-source-name">{s.name}</span>
-                  <span className="news-source-arrow">↗</span>
-                </a>
-              );
-            })}
-          </div>
-        </div>
       </aside>
     </>,
     document.body
