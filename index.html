@@ -1086,7 +1086,14 @@
     .ledger-plus { display: none; }
     .ledger-n { font-size: 26px; }
     .grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .grid-headers, .row { min-width: 700px; }
+    /* Fixed px column widths (not 1fr) so header and rows resolve identically.
+       align-self: flex-start prevents the flex-stretch from overriding the width. */
+    .grid-headers, .row {
+      grid-template-columns: 96px repeat(11, 58px);
+      width: calc(96px + 11 * 58px); /* 734px */
+      align-self: flex-start;
+    }
+    .phase-hdr { overflow: hidden; }
     .dot { --d: 26px; font-size: 10px; }
     .legend-cols { grid-template-columns: repeat(2, 1fr); }
     .legend-col:nth-child(3) ul,

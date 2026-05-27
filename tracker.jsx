@@ -187,7 +187,7 @@ function Masthead({ totalCases, inProgress, condenados, conPrision, search, setS
         <h1>
           <span className="serif-italic">Corrupción</span> Actual <span className="title-rule">·</span> <span className="title-sub">España</span>
         </h1>
-        <p className="standfirst">Estado en tiempo real de los principales casos de corrupción política en su recorrido por el sistema judicial español. <span className="standfirst-note">Solo se muestran casos con actividad judicial o mediática en los últimos 365 días. Las fases son una estimación a partir de información pública; pulsa un caso para acceder a la hemeroteca de cada medio.</span></p>
+        <p className="standfirst">Estado en tiempo real de los principales casos de corrupción política en su recorrido por el sistema judicial español. <span className="standfirst-note">Estimaciones a partir de información pública. Reitérese la presunción de inocencia de todos los implicados.</span></p>
       </div>
       <div className="masthead-stats">
         <Stat n={totalCases} label="casos seguidos" />
