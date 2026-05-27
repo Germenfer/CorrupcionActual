@@ -190,10 +190,10 @@ function Masthead({ totalCases, inProgress, condenados, conPrision, search, setS
         <p className="standfirst">Estado en tiempo real de los principales casos de corrupción política en su recorrido por el sistema judicial español. <span className="standfirst-note">Estimaciones a partir de información pública. Reitérese la presunción de inocencia de todos los implicados.</span></p>
       </div>
       <div className="masthead-stats">
-        <Stat n={totalCases} label="casos seguidos" />
-        <Stat n={inProgress} label="en curso" />
-        <Stat n={condenados} label="con sentencia firme" />
-        <Stat n={conPrision} label="con ingreso en prisión" highlight />
+        <Stat n={totalCases} label="casos seguidos" mobileLabel="casos" />
+        <Stat n={inProgress} label="en curso" secondary />
+        <Stat n={condenados} label="con sentencia firme" secondary />
+        <Stat n={conPrision} label="con ingreso en prisión" highlight secondary />
       </div>
     </header>
   );
@@ -208,17 +208,17 @@ function Ledger({ totalImporte, conImporte, totalCases, historico, historicoUrl 
       <div className="ledger-item ledger-actual">
         <div className="ledger-l">
           <span className="ledger-tick" />
-          Actuales
+          Coste Actual de la Corrupción
         </div>
         <div className="ledger-n">{fmtEUR(totalImporte)}</div>
         <div className="ledger-per">{fmtEUR(totalImporte / WORKERS)} por trabajador · {fmtEUR(totalImporte / VOTERS)} por votante</div>
-        <div className="ledger-note">Presunta estimación basada en casos abiertos.</div>
+        <div className="ledger-note">Estimación basada en casos abiertos.</div>
       </div>
       <div className="ledger-plus" aria-hidden="true">+</div>
       <div className="ledger-item ledger-pasado">
         <div className="ledger-l">
           <span className="ledger-tick ledger-tick-mute" />
-          Pasados
+          Coste Pasado de la Corrupción
         </div>
         <div className="ledger-n">{fmtEUR(historico)}</div>
         <div className="ledger-per">{fmtEUR(historico / WORKERS)} por trabajador · {fmtEUR(historico / VOTERS)} por votante</div>
@@ -228,11 +228,18 @@ function Ledger({ totalImporte, conImporte, totalCases, historico, historicoUrl 
   );
 }
 
-function Stat({ n, label, highlight }) {
+function Stat({ n, label, mobileLabel, highlight, secondary }) {
   return (
-    <div className={`stat ${highlight ? 'stat-highlight' : ''}`}>
+    <div className={`stat${highlight ? ' stat-highlight' : ''}${secondary ? ' stat-secondary' : ''}`}>
       <div className="stat-n">{n}</div>
-      <div className="stat-l">{label}</div>
+      <div className="stat-l">
+        {mobileLabel ? (
+          <>
+            <span className="stat-l-desktop">{label}</span>
+            <span className="stat-l-mobile">{mobileLabel}</span>
+          </>
+        ) : label}
+      </div>
     </div>
   );
 }
