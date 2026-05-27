@@ -1086,7 +1086,9 @@
     .ledger-plus { display: none; }
     .ledger-n { font-size: 26px; }
     .grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .grid-headers, .row { min-width: 700px; }
+    /* Fixed pixel width locks every row and the header to the same size,
+       so 1fr resolves identically in all of them and columns line up. */
+    .grid-headers, .row { width: calc(96px + 11 * 58px); } /* 734px */
     .dot { --d: 26px; font-size: 10px; }
     .legend-cols { grid-template-columns: repeat(2, 1fr); }
     .legend-col:nth-child(3) ul,
