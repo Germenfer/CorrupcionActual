@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Corrupción Actual · España</title>
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,500&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,30 +38,19 @@
     font-size: 14px;
     line-height: 1.35;
     -webkit-font-smoothing: antialiased;
-    overflow: hidden;
   }
   .viewport {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: #0a0907;
-    overflow: hidden;
   }
   .canvas {
-    width: 1440px;
-    height: 900px;
-    flex-shrink: 0;
-    transform-origin: center center;
-    position: relative;
+    width: 100%;
   }
   ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-thumb { background: rgba(0,0,0,.18); border-radius: 4px; }
 
   .stage {
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
     padding: 22px var(--pad-x) 18px;
@@ -1065,9 +1054,55 @@
   .legend-col:nth-child(3) ul,
   .legend-col:nth-child(4) ul { grid-template-columns: 1fr; }
 
-  /* ---------- SCALING SAFETY ---------- */
-  /* Dashboard is a fixed 1440×900 design; the .canvas is scaled via JS
-     to fit the viewport while preserving aspect ratio. */
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 1100px) {
+    :root { --pad-x: 20px; }
+    .masthead-title h1 { font-size: 42px; }
+    .legend-cols { grid-template-columns: repeat(2, 1fr); }
+    .legend-col:nth-child(3) ul,
+    .legend-col:nth-child(4) ul { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --pad-x: 16px;
+      --row-label-w: 96px;
+      --row-h: 62px;
+    }
+    .masthead {
+      grid-template-columns: 1fr;
+    }
+    .masthead-stats {
+      justify-self: start;
+      flex-wrap: wrap;
+    }
+    .stat { min-width: 72px; }
+    .masthead-title h1 { font-size: 34px; }
+    .standfirst { max-width: 100%; font-size: 14px; }
+    .ledger {
+      grid-template-columns: 1fr;
+    }
+    .ledger-actual { border-right: none; border-bottom: 1px solid var(--hair); }
+    .ledger-plus { display: none; }
+    .ledger-n { font-size: 26px; }
+    .grid-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .grid-headers, .row { min-width: 700px; }
+    .dot { --d: 26px; font-size: 10px; }
+    .legend-cols { grid-template-columns: repeat(2, 1fr); }
+    .legend-col:nth-child(3) ul,
+    .legend-col:nth-child(4) ul { grid-template-columns: 1fr 1fr; }
+  }
+
+  @media (max-width: 480px) {
+    :root { --pad-x: 12px; }
+    .masthead-title h1 { font-size: 26px; }
+    .title-sub { font-size: 15px; }
+    .stat-n { font-size: 22px; }
+    .searchbar input { width: 160px; }
+    .legend-cols { grid-template-columns: 1fr; }
+    .legend-col:nth-child(3) ul,
+    .legend-col:nth-child(4) ul { grid-template-columns: 1fr 1fr; }
+  }
 </style>
 
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
@@ -1080,19 +1115,6 @@
 </div>
 <div id="root"></div>
 
-<script>
-  // Scale the 1440×900 canvas to fit the viewport while preserving aspect ratio.
-  function fit() {
-    const c = document.querySelector('.canvas');
-    if (!c) return;
-    const sx = window.innerWidth / 1440;
-    const sy = window.innerHeight / 900;
-    const s = Math.min(sx, sy);
-    c.style.transform = `scale(${s})`;
-  }
-  fit();
-  window.addEventListener('resize', fit);
-</script>
 
 <script src="data.js"></script>
 <!-- casos — un archivo por caso; añadir aquí al crear uno nuevo -->
