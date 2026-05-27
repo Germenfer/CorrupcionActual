@@ -199,6 +199,9 @@ function Masthead({ totalCases, inProgress, condenados, conPrision, search, setS
   );
 }
 
+const WORKERS = 22_293_000;
+const VOTERS  = 37_466_432;
+
 function Ledger({ totalImporte, conImporte, totalCases, historico, historicoUrl }) {
   return (
     <section className="ledger" aria-label="Resumen económico">
@@ -208,6 +211,7 @@ function Ledger({ totalImporte, conImporte, totalCases, historico, historicoUrl 
           Actuales
         </div>
         <div className="ledger-n">{fmtEUR(totalImporte)}</div>
+        <div className="ledger-per">{fmtEUR(totalImporte / WORKERS)} por trabajador · {fmtEUR(totalImporte / VOTERS)} por votante</div>
         <div className="ledger-note">Presunta estimación basada en casos abiertos.</div>
       </div>
       <div className="ledger-plus" aria-hidden="true">+</div>
@@ -217,6 +221,7 @@ function Ledger({ totalImporte, conImporte, totalCases, historico, historicoUrl 
           Pasados
         </div>
         <div className="ledger-n">{fmtEUR(historico)}</div>
+        <div className="ledger-per">{fmtEUR(historico / WORKERS)} por trabajador · {fmtEUR(historico / VOTERS)} por votante</div>
         <div className="ledger-note ledger-note-oneline">Coste total de la corrupción en España. Fuente: <a href={historicoUrl} target="_blank" rel="noopener noreferrer" className="ledger-link">Casos Aislados&nbsp;↗</a></div>
       </div>
     </section>
