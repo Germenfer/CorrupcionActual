@@ -2,7 +2,7 @@ CASES.push({
   id: 'koldo-mascarillas',
   name: 'Caso Koldo · Mascarillas',
   party: 'psoe',
-  phase: 'juicio',
+  phase: 'sentencia',
   year: 2024,
   importe: '€10–53 M',
   importeNota: 'Comisiones presuntas en contratos de mascarillas',

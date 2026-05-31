@@ -2,7 +2,7 @@ CASES.push({
   id: 'pujol',
   name: 'Caso Pujol / Fortuna Andorra',
   party: 'otros',
-  phase: 'juicio',
+  phase: 'sentencia',
   year: 2014,
   importe: '€69 M',
   importeNota: 'Beneficio económico no justificado en cuentas de Andorra (cifras de la causa)',

@@ -2,7 +2,7 @@ CASES.push({
   id: 'protocolos',
   name: 'Caso Protocolos Pandemia',
   party: 'pp',
-  phase: 'diligencias',
+  phase: 'instruccion',
   year: 2024,
   importe: '+7.291 fallecidos',
   importeNota: 'Decisiones sobre traslados desde residencias en marzo-mayo 2020',
