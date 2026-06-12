@@ -32,15 +32,18 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    background: #0a0907;
+    background: #F1EBDD; /* matches default --bg cream */
+    min-height: 100svh;
     color: var(--ink);
     font-family: var(--sans);
     font-size: 14px;
     line-height: 1.35;
     -webkit-font-smoothing: antialiased;
   }
+  body:has(.stage.bg-paper) { background: #ECE6D5; }
+  body:has(.stage.bg-ink)   { background: #14110B; }
   .viewport {
-    background: #0a0907;
+    background: transparent;
   }
   .canvas {
     width: 100%;
@@ -50,7 +53,6 @@
 
   .stage {
     width: 100%;
-    min-height: 100svh;
     display: flex;
     flex-direction: column;
     padding: 22px var(--pad-x) 18px;
