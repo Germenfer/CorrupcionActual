@@ -15,7 +15,7 @@ CASES.push({
     { nombre: 'Pieza Emissao', estado: 'juicio', nota: 'Sobreprecio en la compra de la sociedad brasileña; Fiscalía pide 8 años a González' },
     { nombre: 'Pieza Campo de Golf', estado: 'juicio', nota: 'Adjudicaciones irregulares en el campo de golf del Canal; juicio AN sep 2027; Fiscalía pide 6 años a González' },
     { nombre: 'Pieza Navalcarnero (OHL)', estado: 'intermedia', nota: 'Tren de Navalcarnero; tráfico de influencias y fraude a la Administración Pública' },
-    { nombre: 'Pieza 5 · Blanqueo', estado: 'archivo', nota: 'Archivada para González en 2022' },
+    { nombre: 'Pieza Blanqueo', estado: 'archivo', nota: 'Archivada para González en 2022' },
   ],
   noticias: [
     { fuente: 'Mundiario',  titulo: 'Junio judicial: el juicio de la pieza Inassa del caso Lezo arrancará en septiembre de 2026 en la AN',           fecha: '2026-05-29', url: 'https://www.mundiario.com/articulo/politica/junio-judicial-todos-casos-que-marcaran-agenda-politica-judicial-espanola-2027/20260529124205388389.html' },
