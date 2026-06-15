@@ -12,6 +12,6 @@ CASES.push({
   resumen: 'Pieza separada del caso Koldo en la Audiencia Nacional (juez Ismael Moreno) sobre presunto reparto de adjudicaciones de obra pública en Adif, Puertos del Estado, Ineco y otras entidades. Implicaciones con Acciona y la empresa Servinabar (vinculada a Santos Cerdán). Investigación paralela al juicio del Supremo y a la pieza de financiación del PSOE.',
   noticias: [
     { fuente: 'El Independiente', titulo: 'El laberinto del caso Koldo sigue en la Audiencia Nacional con el foco en la financiación del PSOE y Santos Cerdán', fecha: '2026-05-10', url: 'https://www.elindependiente.com/espana/2026/05/10/laberinto-caso-koldo-sigue-audiencia-nacional-foco-financiacion-psoe-santos-cerdan/' },
-    { fuente: 'Euronews',         titulo: 'La UCO ve trato de favor entre los cabecillas del caso Koldo y Torres',                                              fecha: '2025-11-04', url: 'https://es.euronews.com/perfiles/3224' },
+    { fuente: 'Libertad Digital', titulo: 'La UCO certifica que las citas de la trama de Cerdán coinciden con las fechas de las adjudicaciones a Acciona', fecha: '2026-04-28', url: 'https://www.libertaddigital.com/espana/politica/2026-04-28/la-uco-certifica-que-las-citas-de-la-trama-de-cerdan-coinciden-con-las-fechas-de-las-adjudicaciones-sospechas-a-acciona-1b-7394995/' },
   ],
 });

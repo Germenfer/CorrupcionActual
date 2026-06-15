@@ -13,7 +13,7 @@ CASES.push({
   resumen: 'Pieza derivada del caso Koldo en la Audiencia Nacional (juez Ismael Moreno). Investiga presuntos pagos en efectivo dentro de la estructura del PSOE, descuadres entre los ingresos a Ábalos y Koldo y lo justificado por Ferraz, y la red de empresas (Servinabar, Acciona) que habría adjudicado obra pública a cambio de comisiones. Cerdán dimitió como secretario de Organización el 12-J-2025 e ingresó en prisión preventiva el 30-J-2025; salió el 19-N-2025.',
   noticias: [
     { fuente: 'La Bandera',  titulo: 'El caso Cerdán amenaza con pudrirse años en la Audiencia Nacional mientras el PSOE espera el golpe más duro', fecha: '2026-05-08', url: 'https://labandera.es/caso-cerdan-financiacion-psoe-audiencia-nacional/' },
-    { fuente: 'Euronews',    titulo: 'Santos Cerdán, en libertad tras 5 meses en prisión preventiva',                                                fecha: '2025-11-19', url: 'https://es.euronews.com/perfiles/3224' },
-    { fuente: 'Euronews',    titulo: 'Santos Cerdán reconoce ante el juez dos reuniones con Leire Díez',                                             fecha: '2026-02-02', url: 'https://es.euronews.com/perfiles/3224' },
+    { fuente: 'Infobae',     titulo: 'Santos Cerdán sale de la cárcel de Soto del Real tras cinco meses en prisión provisional',                fecha: '2025-11-19', url: 'https://www.infobae.com/espana/2025/11/19/santos-cerdan-sale-de-la-carcel-de-soto-del-real-tras-cinco-meses-en-prision-provisional/' },
+    { fuente: 'Euronews',    titulo: 'Santos Cerdán reconoce ante el juez dos reuniones con Leire Díez',                                             fecha: '2026-02-02', url: 'https://es.euronews.com/2026/02/02/santos-cerdan-reconoce-ante-el-juez-dos-reuniones-con-leire-diez' },
   ],
 });

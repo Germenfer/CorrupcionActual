@@ -18,13 +18,13 @@ CASES.push({
     { nombre: 'Pieza Repsol', estado: 'instruccion', nota: 'Espionaje corporativo encargado por directivos de Repsol' },
     { nombre: 'Pieza Iberdrola', estado: 'instruccion', nota: 'Espionaje e inteligencia privada contratada por directivos de Iberdrola' },
     { nombre: 'Pieza CENYT', estado: 'instruccion', nota: 'Empresa de Villarejo utilizada como tapadera de actividades ilegales' },
-    { nombre: 'Pieza Dina', estado: 'instruccion', nota: 'Espionaje a Dina Bousselham, asesora de Podemos' },
+    { nombre: 'Pieza Dina', estado: 'sentencia', nota: 'Espionaje a Dina Bousselham, asesora de Podemos; la AN condenó a Villarejo a 3 años y medio en may 2026 por revelar el contenido de su móvil' },
     { nombre: 'Pieza 34', estado: 'archivo', nota: 'Solicitud de investigar a Cospedal por los audios de Villarejo; rechazada por la AN ene 2026' },
   ],
   noticias: [
     { fuente: 'Bolsamanía',    titulo: 'La Justicia confirma indicios para juzgar a BBVA y ex directivos por el caso Villarejo (pieza 9)',                              fecha: '2026-02-20', url: 'https://www.bolsamania.com/noticias/otros/justicia-confirma-indicios-juzgar-bbva-ex-directivos-caso-villarejo--21776130.html' },
     { fuente: 'Deia',          titulo: 'La AN rechaza investigar a Cospedal en el caso Villarejo (pieza 34)',                                                           fecha: '2026-01-26', url: 'https://www.deia.eus/politica/2026/01/26/an-rechaza-investigar-cospedal-caso-villarejo-10619672.html' },
-    { fuente: 'Euronews',      titulo: 'La Justicia condena al excomisario Villarejo a 8 años por el caso Wine',                                                        fecha: '2025-05-13', url: 'https://es.euronews.com/perfiles/3224' },
+    { fuente: 'El Independiente', titulo: 'La AN condena a Villarejo a 3 años y medio por divulgar el contenido del móvil de la asesora de Pablo Iglesias (pieza Dina)', fecha: '2026-05-05', url: 'https://www.elindependiente.com/espana/2026/05/05/audiencia-nacional-condena-villarejo-3-anos-medio-prision-divulgar-contenido-movil-dina-bouselham/' },
     { fuente: 'Infobae',       titulo: 'La Audiencia Nacional rebaja de 19 a 13 años de cárcel la condena al comisario Villarejo',                                      fecha: '2025-09-17', url: 'https://www.infobae.com/espana/2025/09/17/la-audiencia-nacional-rebaja-de-19-a-13-anos-de-carcel-la-condena-al-comisario-villarejo/' },
   ],
 });

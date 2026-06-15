@@ -13,6 +13,6 @@ CASES.push({
   noticias: [
     { fuente: 'Demócrata',     titulo: 'La familia Pujol, a la espera de sentencia tras más de seis meses de vista oral',                                  fecha: '2026-05-08', url: 'https://www.democrata.es/tribunales/el-juicio-a-la-familia-pujol-queda-visto-para-sentencia-con-el-expresident-apartado-y-la-fiscalia-firme-en-sus-peticiones/' },
     { fuente: 'ARA (en)',      titulo: 'The Pujol case is ready for sentencing fourteen years after the proceedings began',                                fecha: '2026-05-08', url: 'https://en.ara.cat/politics/the-pujol-case-is-ready-for-sentencing-fourteen-years-after-the-proceedings-began_1_5736751.html' },
-    { fuente: 'Euronews',      titulo: 'Jordi Pujol irá a juicio por el caso de la fortuna en Andorra (por videoconferencia desde su domicilio)',          fecha: '2025-11-24', url: 'https://es.euronews.com/perfiles/2828' },
+    { fuente: 'Deia',          titulo: 'El juicio a los Pujol queda visto para sentencia con el expresident apartado por incapacidad',                       fecha: '2026-05-14', url: 'https://www.deia.eus/politica/2026/05/14/juicio-pujol-queda-visto-sentencia-11070304.html' },
   ],
 });
