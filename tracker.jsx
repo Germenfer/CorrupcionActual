@@ -434,6 +434,30 @@ function DetailPanel({ c, onClose, onToast }) {
           </div>
         </div>
 
+        {(c.piezas || []).length > 0 && (
+          <div className="detail-piezas">
+            <div className="detail-piezas-h">
+              <h3>Piezas</h3>
+              <span className="detail-news-c">{c.piezas.length} {c.piezas.length === 1 ? 'pieza' : 'piezas'}</span>
+            </div>
+            <ul className="piezas-list">
+              {c.piezas.map((p, i) => {
+                const ph = PHASES.find(x => x.id === p.estado);
+                const label = p.estado === 'archivo' ? 'Archivada' : (ph ? ph.short : p.estado);
+                return (
+                  <li key={i} className="pieza-item">
+                    <span className={`pieza-badge pieza-badge-${p.estado}`}>{label}</span>
+                    <div>
+                      <div className="pieza-nombre">{p.nombre}</div>
+                      {p.nota && <div className="pieza-nota">{p.nota}</div>}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+
         {(c.noticias || []).length > 0 && (
           <div className="detail-news">
             <div className="detail-news-h">

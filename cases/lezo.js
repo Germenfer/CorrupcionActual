@@ -10,6 +10,13 @@ CASES.push({
   ultima: '2026-05',
   ultimaTexto: 'Juicio de la pieza Inassa (compra filial colombiana del Canal) fijado en la AN para septiembre-octubre 2026. Pieza Emissao (Fiscalía pide 8 años a González) y pieza Campo de Golf (septiembre 2027) también señaladas. González no se sienta en el banquillo hasta 2026-2027.',
   resumen: 'Trama sobre el saqueo del Canal de Isabel II durante la presidencia de Ignacio González en la Comunidad de Madrid. Detenciones en 2017. González fue desimputado de la pieza 1 (Inassa, compra de la filial colombiana en 2001), que se elevó a juicio con 22 procesados (mayoritariamente exconsejeros del Canal). Sí está procesado en las piezas de Emissao (sobreprecio en la compra de la sociedad brasileña; Fiscalía pide 8 años), Campo de Golf (juicio fijado para septiembre de 2027; Fiscalía pide 6 años) y Navalcarnero (OHL). La pieza 5 (blanqueo) fue archivada para González en 2022.',
+  piezas: [
+    { nombre: 'Pieza Inassa', estado: 'juicio', nota: 'Compra fraudulenta de la filial colombiana del Canal de Isabel II; juicio AN sep–oct 2026 (22 procesados; González desimputado)' },
+    { nombre: 'Pieza Emissao', estado: 'juicio', nota: 'Sobreprecio en la compra de la sociedad brasileña; Fiscalía pide 8 años a González' },
+    { nombre: 'Pieza Campo de Golf', estado: 'juicio', nota: 'Adjudicaciones irregulares en el campo de golf del Canal; juicio AN sep 2027; Fiscalía pide 6 años a González' },
+    { nombre: 'Pieza Navalcarnero (OHL)', estado: 'intermedia', nota: 'Tren de Navalcarnero; tráfico de influencias y fraude a la Administración Pública' },
+    { nombre: 'Pieza 5 · Blanqueo', estado: 'archivo', nota: 'Archivada para González en 2022' },
+  ],
   noticias: [
     { fuente: 'Mundiario',  titulo: 'Junio judicial: el juicio de la pieza Inassa del caso Lezo arrancará en septiembre de 2026 en la AN',           fecha: '2026-05-29', url: 'https://www.mundiario.com/articulo/politica/junio-judicial-todos-casos-que-marcaran-agenda-politica-judicial-espanola-2027/20260529124205388389.html' },
     { fuente: 'El Plural',  titulo: 'El juicio a Ignacio González, el último reflejo de la doble velocidad de la Justicia',                           fecha: '2025-12-24', url: 'https://www.elplural.com/sociedad/tribunales/juicio-ignacio-gonzalez-marco-operacion-lezo-ultimo-reflejo-doble-velocidad-justicia_368226102' },

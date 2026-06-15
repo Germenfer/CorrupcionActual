@@ -10,6 +10,17 @@ CASES.push({
   ultima: '2026-02',
   ultimaTexto: 'AN confirma indicios para juzgar a BBVA y ex directivos (pieza 9) tras desestimar los 11 recursos de apelación. Última pieza (fraude fiscal) visto para sentencia en la AN (nov 2025); fallo pendiente. AN rechaza investigar a Cospedal por la pieza 34.',
   resumen: 'Macrocausa Tándem en torno al excomisario José Manuel Villarejo: espionajes encargados por empresas (BBVA, Repsol), políticos y particulares. Múltiples piezas con sentencias parciales, rebajas en apelación y recursos pendientes ante el Supremo. La pieza BBVA aún sin juicio. La pieza Kitchen es independiente pero conectada.',
+  piezas: [
+    { nombre: 'Piezas Iron · Land · Pintor (1er juicio conjunto)', estado: 'recursos', nota: 'Espionaje político y corporativo; condena AN a 19 años, rebajada a 13 en apelación sep 2025' },
+    { nombre: 'Pieza Wine', estado: 'recursos', nota: 'Condena AN a 8 años may 2025; pendiente de recurso' },
+    { nombre: 'Pieza fraude fiscal', estado: 'sentencia', nota: 'Visto para sentencia AN nov 2025; fallo pendiente' },
+    { nombre: 'Pieza 9 · BBVA', estado: 'juicio', nota: 'Juicio pendiente; AN confirmó indicios y rechazó 11 recursos en feb 2026' },
+    { nombre: 'Pieza Repsol', estado: 'instruccion', nota: 'Espionaje corporativo encargado por directivos de Repsol' },
+    { nombre: 'Pieza Iberdrola', estado: 'instruccion', nota: 'Espionaje e inteligencia privada contratada por directivos de Iberdrola' },
+    { nombre: 'Pieza CENYT', estado: 'instruccion', nota: 'Empresa de Villarejo utilizada como tapadera de actividades ilegales' },
+    { nombre: 'Pieza Dina', estado: 'instruccion', nota: 'Espionaje a Dina Bousselham, asesora de Podemos' },
+    { nombre: 'Pieza 34', estado: 'archivo', nota: 'Solicitud de investigar a Cospedal por los audios de Villarejo; rechazada por la AN ene 2026' },
+  ],
   noticias: [
     { fuente: 'Bolsamanía',    titulo: 'La Justicia confirma indicios para juzgar a BBVA y ex directivos por el caso Villarejo (pieza 9)',                              fecha: '2026-02-20', url: 'https://www.bolsamania.com/noticias/otros/justicia-confirma-indicios-juzgar-bbva-ex-directivos-caso-villarejo--21776130.html' },
     { fuente: 'Deia',          titulo: 'La AN rechaza investigar a Cospedal en el caso Villarejo (pieza 34)',                                                           fecha: '2026-01-26', url: 'https://www.deia.eus/politica/2026/01/26/an-rechaza-investigar-cospedal-caso-villarejo-10619672.html' },

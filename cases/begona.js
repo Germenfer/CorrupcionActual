@@ -10,6 +10,11 @@ CASES.push({
   ultima: '2026-05',
   ultimaTexto: 'Peinado cita a Begoña Gómez, Cristina Álvarez y Barrabés para la audiencia previa del juicio oral el 9 de junio, con advertencia de conducción forzosa. Queda confirmado el juicio con jurado popular por 4 delitos.',
   resumen: 'Investigación al entorno profesional de la esposa del presidente del Gobierno por tráfico de influencias, corrupción en los negocios, malversación y apropiación indebida en relación con la cátedra que codirigía en la UCM y el uso de su asesora en Moncloa para fines privados. Pieza derivada con exposición razonada al TS sobre Pedro Sánchez en febrero de 2026 (rechazada). Pieza separada sobre el rescate de Air Europa.',
+  piezas: [
+    { nombre: 'Pieza principal · Tráfico de influencias y cátedra UCM', estado: 'intermedia', nota: 'Juicio con jurado popular confirmado; audiencia previa 9-jun-2026; 4 delitos (tráfico de influencias, corrupción en los negocios, malversación, apropiación indebida)' },
+    { nombre: 'Pieza Air Europa · Rescate SEPI', estado: 'instruccion', nota: 'Pieza separada sobre el rescate de 475 M€ durante la pandemia; también investigada en el caso Koldo' },
+    { nombre: 'Exposición razonada al TS · Pedro Sánchez', estado: 'archivo', nota: 'Rechazada por el TS en feb 2026; Peinado no elevó al Supremo imputación contra el presidente' },
+  ],
   noticias: [
     { fuente: 'The Objective',     titulo: 'Peinado cita a Begoña Gómez el 9 de junio para la audiencia previa a su juicio por jurado',                fecha: '2026-05-26', url: 'https://theobjective.com/espana/tribunales/2026-05-26/juez-peinado-cita-begona-gomez-9-junio/' },
     { fuente: 'Mundiario',         titulo: 'El juez Peinado cierra la investigación contra Begoña Gómez y la envía a un juicio con jurado popular',     fecha: '2026-04-13', url: 'https://www.mundiario.com/articulo/politica/juez-peinado-cierra-investigacion-begona-gomez-envia-juicio-jurado/20260413181947382296.html' },

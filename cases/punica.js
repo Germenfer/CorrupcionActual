@@ -10,6 +10,13 @@ CASES.push({
   ultima: '2026-05',
   ultimaTexto: 'La AN abre juicio oral contra Granados y otras 40 personas y 79 empresas en la pieza 8 (adjudicaciones de suelo público y transportes en la CAM). Segundo juicio (fiestas populares) celebrado entre enero y marzo de 2026.',
   resumen: 'Macrocausa de financiación irregular y mordidas en adjudicaciones de ayuntamientos del PP en Madrid, Murcia, León y Valencia, fragmentada en 14 piezas separadas. Granados es el principal acusado, con prisión preventiva 2014-2017. Las piezas siguen llegando a juicio una a una.',
+  piezas: [
+    { nombre: 'Pieza 3 · Fiestas populares', estado: 'sentencia', nota: 'Segundo juicio oral celebrado ene–mar 2026; fallo pendiente' },
+    { nombre: 'Pieza 4 · Urbanismo Valdemoro', estado: 'intermedia', nota: 'Instrucción cerrada; pendiente de informe pericial' },
+    { nombre: 'Pieza 5 · Adjudicaciones municipales', estado: 'intermedia', nota: 'Irregularidades en adjudicaciones de varios ayuntamientos del PP' },
+    { nombre: 'Pieza 8 · Transportes y suelo CAM', estado: 'intermedia', nota: 'Juicio oral abierto may 2026; 40 personas y 79 empresas; Granados principal acusado' },
+    { nombre: 'Pieza 10 · Reputación online', estado: 'archivo', nota: 'Archivada en 2024; investigaba contratación de trabajos de reputación online de cargos del PP' },
+  ],
   noticias: [
     { fuente: 'El Plural',     titulo: 'La Audiencia Nacional abre juicio oral contra Granados y otras 40 personas por corrupción en una pieza separada de Púnica', fecha: '2026-05-26', url: 'https://www.elplural.com/sociedad/tribunales/audiencia-nacional-abre-juicio-oral-contra-granados-40-personas-corrupcion-pieza-separada-punica_391157102' },
     { fuente: 'El Debate',     titulo: 'Granados regresará al banquillo en enero de 2026 para su segundo juicio del caso Púnica',                                    fecha: '2025-12-20', url: 'https://www.eldebate.com/espana/20251220/granados-regresara-banquillo-enero-2026-segundo-juicio-caso-punica_367449.html' },
