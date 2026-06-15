@@ -1,4 +1,4 @@
-const TRACKER_DATE = new Date('2026-05-22');
+const TRACKER_DATE = new Date('2026-06-15');
 
 const PHASES = [
   { id: 'indicios',    short: 'Indicios',    label: 'Primeros\nIndicios' },
